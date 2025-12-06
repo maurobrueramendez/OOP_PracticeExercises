@@ -1,13 +1,14 @@
-# Ignore Java compiled files
+# Java compiled files
 *.class
 
-# Ignore build directories (common with Java)
+# Build directories
 bin/
 out/
 build/
 target/
 
-# Ignore IDE metadata 
-*.iml
-.idea/
+# VS Code settings
 .vscode/
+
+# macOS files
+.DS_Store
