@@ -1,0 +1,9 @@
+Implement a system to represent items in a small library. 
+Define an interface LibraryItem with methods String getTitle() and double getValue(). 
+Implement two item types: Book, which has a title, an author, and a price; 
+and Magazine, which has a title, an issue number, and a price. 
+Implement a class LibraryCollection that stores multiple LibraryItem objects in an ArrayList, 
+allows adding new items, and provides a method printInventory() that prints all items using their toString(). 
+Implement toString() in both Book and Magazine so the output includes all relevant information. 
+Finally, write a TestLibrary class with a main method that creates several books and magazines, 
+adds them to a collection, and prints the full inventory.
