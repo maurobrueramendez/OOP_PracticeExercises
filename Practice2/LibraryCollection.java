@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class LibraryCollection {
-    private ArrayList<LibraryItem> collection;
+    private final ArrayList<LibraryItem> collection;
 
     public LibraryCollection() {
         this.collection = new ArrayList<>();
