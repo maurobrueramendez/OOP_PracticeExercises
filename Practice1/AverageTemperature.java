@@ -1,10 +1,10 @@
 public class AverageTemperature implements TemperatureModel {
     @Override
     public double predict(double[] hourlyTemps) {
-        double mean = 0;
+        double sum = 0;
         for(int i = 0; i < hourlyTemps.length; i++) {
-            mean += hourlyTemps[i];
+            sum += hourlyTemps[i];
         }
-        return mean / hourlyTemps.length;
+        return sum / hourlyTemps.length;
     }
 }
