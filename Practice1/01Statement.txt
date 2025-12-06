@@ -1,0 +1,8 @@
+Implement a system for predicting daily temperature. 
+Define an interface TemperatureModel with a method double predict(double[] hourlyTemps).
+Then implement two classes: AverageTemperature, which returns the average of the 24 hourly temperatures, 
+and WeightedTemperature, which uses a given array of 24 weights to compute a weighted average. 
+Implement a class TemperatureReport that stores multiple TemperatureModel objects in an ArrayList 
+and provides methods to add a model and to print each model’s prediction for a given day. 
+Finally, write a TestWeather class with a main method that creates sample temperature data, 
+creates the two models, adds them to a report, and prints their predictions.
