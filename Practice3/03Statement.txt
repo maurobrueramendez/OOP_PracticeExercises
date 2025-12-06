@@ -1,0 +1,12 @@
+Implement a generic storage system. 
+Define a generic interface Storage<T> with methods void add(T element), 
+ArrayList<T> getElements(), and void clear(). 
+Implement a class BasicStorage<T> that stores elements in an ArrayList<T> 
+and implements all interface methods. 
+Then implement a class LoggingStorage<T> that also implements Storage<T> 
+and internally uses a BasicStorage<T> object to store the elements, 
+but additionally counts how many times add, getElements, and clear are called. 
+Provide a method void printStatistics() in LoggingStorage<T> that prints these counts. 
+Finally, write a TestStorage class with a main method that creates 
+a LoggingStorage<String>, adds some strings, retrieves elements, clears them, 
+and prints the statistics.
