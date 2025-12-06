@@ -1,5 +1,5 @@
 # Welcome to the OOP Practice Repository! 
-## Intended for second year Computer Science undergraduate students
+### Intended for second year Computer Science undergraduate students
 
 This is a collection of **code-based problems** and their implementations, in preparation for the final exam of the **Object-Oriented Programming** course.
 
