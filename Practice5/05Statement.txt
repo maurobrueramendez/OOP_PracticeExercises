@@ -1,0 +1,14 @@
+Implement a system to represent meals made of individual components. 
+Define an abstract class MealComponent with a String name and two abstract methods: 
+double getCalories() and double getPrice().
+Implement a class Ingredient that extends MealComponent and has fixed calorie 
+and price values provided in its constructor.
+Implement a class Meal that also extends MealComponent, 
+but represents a composite component. 
+It must store multiple MealComponent objects in an ArrayList. 
+Its getCalories() method must return the total calories of all components, 
+and its getPrice() method must return the total price of all components. 
+Provide a method addComponent(MealComponent c) to add items to the meal.
+Finally, write a TestMeal class with a main method that creates several ingredients, 
+creates a meal composed of multiple ingredients (and potentially sub-meals), 
+and prints the meal’s name, total calories, and total price.
