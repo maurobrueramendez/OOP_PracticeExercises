@@ -1,0 +1,19 @@
+You work for a company which is implementing a webpage where they sell
+computer-related products. Concretely, you are in charge of the shopping cart where clients
+add products. A client can add either a single product or a product bundle. 
+
+Your task is to write the Java code of the interface “CartItem” and the two classes “Product”
+and “ProductBundle”. The price of a product bundle is defined of the sum of prices of the
+products that are part of the bundle. The method “toString” should return the following:
+• For “Product”, a string that consists in the name and price of the product.
+• For “ProductBundle”, a string on the following format (information about each product
+    separated by comma in parentheses, followed by the total price), where <product1>
+    is obtained by calling “toString” on product 1, etcetera:
+        (<product1>, <product2>, ..., <productk>);<precio total>
+
+For example, if a bundle contains two products Laptop (1200¤) and Mouse (40¤), an
+example output is
+    (Laptop;1200, Mouse;40);1240
+
+You also have to implement a class “TestCart” with a main method that tests the two classes.
+The main method should create at least one instance of each class and call all methods.
