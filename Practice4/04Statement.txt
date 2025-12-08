@@ -1,0 +1,10 @@
+Implement a system to represent smart home devices. 
+Define an abstract class Device with a String name 
+and a method double getPowerUsage() that must be implemented by subclasses. 
+Implement two device types: LightBulb, which has a power rating in watts and returns that value in getPowerUsage(), 
+and Heater, which has a temperature setting and a base power consumption; 
+its getPowerUsage() should return the base consumption multiplied by the temperature setting divided by 20. 
+Implement a class HomeSystem that stores multiple Device objects in an ArrayList 
+and provides methods to add a device and to print the total power usage of all devices. 
+Finally, write a TestHome class with a main method that creates several devices, 
+adds them to a home system, and prints the total power usage.
