@@ -3,5 +3,5 @@ public abstract class Device {
     public Device(String name) {
         this.name = name;
     }
-    abstract double getPowerUsage();
+    public abstract double getPowerUsage();
 }
