@@ -1,5 +1,5 @@
 public class LightBulb extends Device {
-    private double powerRating;
+    private final double powerRating;
     public LightBulb(double pR) {
         super("LightBulb");
         this.powerRating = pR;        
