@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class ProductBundle implements CartItem {
-    private ArrayList<CartItem> items;
+    private final ArrayList<CartItem> items;
     private int count;
     
     public ProductBundle() {
