@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class LoggingStorage<T> implements Storage<T> {
-    private BasicStorage<T> elements;
+    private final BasicStorage<T> elements;
     private int addCount;
     private int getElementsCount;
     private int clearCount;
