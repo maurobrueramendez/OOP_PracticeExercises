@@ -1,0 +1,12 @@
+In machine learning, a predictor is a model that predicts an output given
+an input in the form of an array a of real numbers.
+Your task is to write the Java code for the Predictor interface, three classes that implement the
+interface, and a main method that tests the three classes. The first class should represent
+a Constant Predictor, which always predicts the same output regardless of the input. The
+second class should represent a Linear Predictor, which has an array of weights w with one
+element per input, and the prediction is a weighted sum of the inputs: w1a1 + . . . + wnan.
+The third class should represent a Logistic Predictor, which also has an array of weights w
+with one element per input, and the prediction is given by ϕ(w1a1 + . . . + wnan), where the
+non-linear function ϕ is given by ϕ(x) = 1/(1+e^(-x))
+The Java method Math.exp(double x) returns the natural exponent e^x. The main method
+should create at least one instance of each class and test the method predict on each instance.
