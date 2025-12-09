@@ -1,0 +1,12 @@
+Implement a system to represent exam questions and compute their scores. 
+Define an interface Scorable with a method double getScore(). 
+Define an abstract class ExamQuestion that implements Scorable, with a String text and a double maxPoints. 
+Implement a class MultipleChoiceQuestion that extends ExamQuestion and stores the correct option (as a char) 
+and the student’s chosen option; its getScore() should return maxPoints if the chosen option is correct, and 0 otherwise. 
+Implement a class OpenQuestion that extends ExamQuestion and stores a double gradeFraction between 0 and 1; 
+its getScore() should return maxPoints * gradeFraction. 
+Implement a class Exam that stores several ExamQuestion objects in an ArrayList 
+and provides a method double getTotalScore() that returns the sum of all question scores, 
+and a method void printReport() that prints each question’s text and score. 
+Finally, write a TestExam class with a main method that creates several questions (of both types), 
+builds an exam with them, and prints the total score and the detailed report.
