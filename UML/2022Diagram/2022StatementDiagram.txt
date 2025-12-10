@@ -1,0 +1,30 @@
+The goal of this exercise is to design an application that manages the work
+process for the construction of the airframe of an Airbus airplane. An Airbus is formed by
+pieces. Each piece is identified by a unique reference number. Each new piece is assigned
+the first available reference number (the last reference number assigned, plus one).
+• The pieces can be simple or composite, i.e. composed of other pieces.
+• Simple pieces are divided into screws, plates or tubes.
+• Each piece has a weight.
+• Each screw has a type, a length and a thread size identified by an integer.
+• Each plate has a maximum size represented by a length, a width and a height.
+• Each tube has a diameter and a length.
+
+For all pieces, we can compute the total weight, which for composite pieces is computed
+as the sum of the weight of the components. We can also compute the volume, which for
+plates is approximated as the maximum size (volume of the 3D box that contains it), and
+for tubes is defined by the length and diameter (in this approximation, screws do not have a
+volume). Again, for composite pieces the volume is computed as the sum of the volume of
+the components.
+The Airbus factories are distributed in different countries. Each factory has different work
+groups that are in charge of constructing the pieces. A work group has an associated name,
+and consists of persons that have a given job, which can be manager or worker. One manager
+acts as the director of the work group. Each work group is in charge of constructing a certain
+number of pieces of different types, and different work groups can construct the same piece.
+For each piece, the work group has an associated delivery date. The delivery date of simple
+pieces has to be before the delivery date of composite pieces that contain these simple pieces.
+The system should be able to test that this condition is satisfied using a method.
+Design the application previously described, including the classes and class relations, as well
+as the attributes and methods of each class. It is necessary to include constructor methods,
+and when a class has attributes that are empty at the time of creation or initialized to a default
+value, it is necessary to include getter and setter methods. If attributes are initialized in the
+constructor, it is not necessary to include getters and setters.
